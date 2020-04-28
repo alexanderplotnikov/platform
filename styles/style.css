@@ -1,0 +1,69 @@
+body{
+    font-size: 12px;
+}
+.logo {
+    margin: 40px;
+}
+nav{
+    display: flex;
+    /* background-color: #004c64; */
+    color: white;
+}
+.menu{
+    margin-left: auto;
+    margin-top: auto;
+}
+.menu, ul, li{
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.logoText{
+    display: inline-block;
+    font-size: 2em;
+    margin-left: 4px;
+}
+.jumbo{
+    background-color: #004c64;
+    background: radial-gradient(circle, rgba(65,152,190,1) 0%, rgba(0,76,100,1) 100%);
+    color: white;
+}
+#bigBird {
+    grid-column: 2/3;
+    width: 600px;
+    height: 600px;
+}
+article{
+    position: relative;
+}
+.jumboText{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 2em;
+    width: 540px;
+}
+
+#tagline {
+    font-size: 2.5em;
+}
+
+#jumboDesc {
+    font-size: 1em;
+}
+
+.about{
+    
+}
+.projects{
+    background-color: #f3aba1;
+}
+section, aside, p, h1, ul, li{
+    border: solid 1px black;
+    margin: 6px;
+}
+
+#jumboGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
