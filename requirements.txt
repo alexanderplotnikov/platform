@@ -1,0 +1,50 @@
+TheraPigeon website/brouchure to inform people what we do
+One page
+Intro/Menu section
+    menu with Scroll To functionality
+
+About section
+    Why we do it 
+    Who we are
+Projects section
+    list projects
+Survey for future Projects
+    item 1/2/3/write in/ submit btn
+Contact us  
+    3rd party form (Formspree)
+Footer
+    Social links/Share us btn
+    Privacy/Term of Use
+    copyright symbol
+    donate?
+    blog/news?
+
+
+Donate
+
+
+Layout for Intro - Zac
+
+Layout for main sections - Al
+    Content for why we do it
+    Content for who we are
+    Content for Token Board Project
+
+Overall style (Fonts/size/boxshadow/backgrounds)
+
+Survey form
+    html/css/js(setup Formspree)    
+    Content for Survey Area - a few given suggestions(research apps)
+Contact form    
+    html/css/js(setup Formspree)
+
+Layout for Footer
+Social links
+    Facebook
+    Twitter
+    Instagram
+    Reddit
+    
+
+
+    /////Content Writing/////

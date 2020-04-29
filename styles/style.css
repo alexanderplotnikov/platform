@@ -1,69 +1,230 @@
 body{
     font-size: 12px;
-}
-.logo {
-    margin: 40px;
-}
-nav{
-    display: flex;
-    /* background-color: #004c64; */
-    color: white;
-}
-.menu{
-    margin-left: auto;
-    margin-top: auto;
-}
-.menu, ul, li{
-    display: inline-block;
-    font-size: 1.5em;
+    text-align: center;
 }
 
-.logoText{
-    display: inline-block;
-    font-size: 2em;
-    margin-left: 4px;
-}
-.jumbo{
-    background-color: #004c64;
-    background: radial-gradient(circle, rgba(65,152,190,1) 0%, rgba(0,76,100,1) 100%);
-    color: white;
-}
-#bigBird {
-    grid-column: 2/3;
-    width: 600px;
-    height: 600px;
-}
-article{
-    position: relative;
-}
-.jumboText{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    font-size: 2em;
-    width: 540px;
-}
+@media (min-width: 300px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: 70px;
+        text-align: center;
+        padding-top: 5px;
+        padding-left: 20px;
+    }
 
-#tagline {
-    font-size: 2.5em;
-}
+    .logo {
+        display: flex;
+        vertical-align: middle;
+        text-align: center;
+        align-items: center;
+    }
 
-#jumboDesc {
-    font-size: 1em;
-}
+    #birdLogo {
+        background-color: white;
+        border-radius: 50%;
+        width: 40px;
+    }
 
-.about{
+    nav{
+        color: white;
+    }
+    .menu{
+        margin-left: auto;
+        margin-right: 20px;
+        
+    }
+    .menu, ul, li{
+        display: inline;
+        visibility: hidden;
+        font-size: 1.5em;
+    }
+    
+    .logoText{
+        font-size: 1.5em;
+        display: inline;
+        margin-left: 5px;
+        border-color: transparent;
+    }
+    .jumbo{
+        background-color: #004c64;
+        background: radial-gradient(circle, rgba(65,152,190,1) 0%, rgba(0,76,100,1) 100%);
+        color: white;
+        padding-bottom: 4em;
+    }
+    #bigBird {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 300px;
+        height: 300px;
+        top: 0px;
+        justify-self: center;
+    }
+    article{
+        position: relative;
+    }
+    .jumboText{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-size: 1.2em;
+        width: 340px;
+        margin-left: 5px;
+        border-color: transparent;
+        justify-self: center;
+        z-index: 1;        
+    }
+    
+    #tagline {
+        font-size: 2.5em;
+    }
+    
+    #jumboDesc {
+        font-size: 1em;
+        margin-top: 10px;
+        border-color: transparent;
+        /* text-align: center; */
+    }
+    .btn {
+        width: 100px;
+        cursor: pointer;
+        color: white;
+        background-color: #cb4e4e;
+        border-radius: 15px;
+        border: none;
+        height: 50px;
+        width: 100px;
+        text-align: center;
+        line-height: 50px;
+    }
+    
+    #learnMore {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 180px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #jumboGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+@media (min-width: 600px) {
+    .jumboText{
+        width: 600px;
+    }
+    #tagline{
+        font-size: 2.3em;
+    }   
+    #jumboDesc{
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 1025px) {
+    .header {
+        height: 100px;
+        padding-top: 20px;
+    }
+
+    .logo {
+       
+    }
+
+    #birdLogo {
+        width: 50px;
+    }
+    .menu{
+     
+    }
+    .menu, ul, li{
+        visibility: visible;
+    }
+    
+    .logoText{
+        font-size: 2em;
+    }
+    .jumbo{
+       
+    }
+    #bigBird {
+        grid-column: 2/3;
+        width: 450px;
+        height: 450px;
+        align-self: center;
+    }
+    .jumboText{
+        grid-row: 1/2;
+        font-size: 2em;
+        width: 440px;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    #jumboDesc {
+        margin-top: 15px;
+        font-size: 1em;
+    }
+    #tagline{
+        font-size: 2.5em;
+    }   
+  
+    #learnMore {
+        margin-top: 40px;
+        width: 200px;
+    }
+    #jumboGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1240px){
+    #bigBird {
+        grid-column: 2/3;
+        width: 600px;
+        height: 600px;
+        
+    }
     
 }
+
+/*Backgrounds for sections*/
 .projects{
     background-color: #f3aba1;
 }
-section, aside, p, h1, ul, li{
-    border: solid 1px black;
-    margin: 6px;
+.survey{
+    background-color: #f7f2d5;
+}
+footer{
+    height: 10em;
+    background-color: rgba(0,76,100,1);
+}
+/* Main Layout */
+
+.aboutLayout, .projectsLayout, .surveyLayout, .contactLayout{
+    width: 70%;
+    height: 400px;/*height: 400px;TEMP*/
+    margin: 0 auto; 
+}
+.aboutLayout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.projectItem{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.projectItem > aside{
+    grid-column: 1/2;
+}
+.projectItem > section{
+    grid-column: 2/4;
+    grid-row: 1/2;
 }
 
-#jumboGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+section, aside, p, h1, ul, li{
+    border: solid 1px black;
+    margin: 1px;
 }
+
