@@ -1,6 +1,55 @@
 body{
     font-size: 12px;
+    /* text-align: left;  */
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.mainHead {
+    font-size: 3.5em;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
     text-align: center;
+  
+}
+
+.mainText {
+    font-size: 1.5em;
+    font-size: 1.7em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    line-height: 1.5;
+    justify-self: center;
+    padding: 0 5%;
+}
+
+#projScroll{
+    color: #034f68;
+    font-size: 5em;
+}
+.aboutLayout {
+    grid-gap: 100px;
+    padding: 50px;
+}
+
+.projects {
+    background-color: #f03849;
+    
+}
+
+.projectItem {
+   
+}
+
+#launchToken {
+  margin-left: 162px;
+  /* grid-row: 1/2;
+  grid-column: 1/2;
+  position: absolute;
+  bottom: 0; */
 }
 
 @media (min-width: 300px) {
@@ -10,7 +59,7 @@ body{
         justify-content: start;
         height: 70px;
         text-align: center;
-        padding-top: 5px;
+        
         padding-left: 20px;
     }
 
@@ -49,9 +98,11 @@ body{
     }
     .jumbo{
         background-color: #004c64;
-        background: radial-gradient(circle, rgba(65,152,190,1) 0%, rgba(0,76,100,1) 100%);
+        background: radial-gradient(circle, rgba(65,152,190,1) 0%, #004c64 100%);
         color: white;
         padding-bottom: 4em;
+        box-shadow: 0px 0px 30px -7px rgba(0,76,100,1);
+        z-index: 5;
     }
     #bigBird {
         grid-column: 1/2;
@@ -72,11 +123,13 @@ body{
         margin-left: 5px;
         border-color: transparent;
         justify-self: center;
-        z-index: 1;        
+        z-index: 1;
+        text-align: center;        
     }
     
     #tagline {
         font-size: 2.5em;
+        font-family: serif;
     }
     
     #jumboDesc {
@@ -111,6 +164,18 @@ body{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
+
+    .about {
+        background-color: #ffffe4;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(239,243,245,1) 100%);
+        z-index: -1;
+        position: relative;
+        padding: 5em 0;
+        -webkit-box-shadow: inset 0px -4px 16px -10px rgba(0,76,100,1);
+        -moz-box-shadow: inset 0px -4px 16px -10px rgba(0,76,100,1);
+        box-shadow: inset 0px -4px 16px -10px rgba(0,76,100,1);
+       
+    }
 }
 @media (min-width: 600px) {
     .jumboText{
@@ -126,7 +191,7 @@ body{
 @media (min-width: 1025px) {
     .header {
         height: 100px;
-        padding-top: 20px;
+        
     }
 
     .logo {
@@ -191,40 +256,197 @@ body{
 
 /*Backgrounds for sections*/
 .projects{
-    background-color: #f3aba1;
+    /* background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(239,243,245,1) 100%); */
+    background-color: #ff6270;
+    background: linear-gradient(0deg, rgba(255,148,157,1) 0%, rgba(255,98,112,1) 100%);
+    background: linear-gradient(0deg, rgba(255,121,132,1) 0%, rgba(255,92,106,1) 100%);
+
+    z-index: 3;
+    position: relative;
+    color: white;
+    margin-top: -10em;
+    padding-top: 14em;
+    
 }
 .survey{
     background-color: #f7f2d5;
 }
 footer{
-    height: 10em;
-    background-color: rgba(0,76,100,1);
+    background-color: #004c64;
+    text-align: center;
+    padding-top: 1em;
 }
+.footerBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footerMission{
+    font-size: 1.2em;
+    width: 70%;
+    margin: 0 auto;
+    color: #5a828f;
+    text-align: left;
+}
+.socialLinks{
+    display: flex;
+}
+.socialLinks > ul{
+    margin: auto auto;
+    color: #5a828f;
+}
+.socialLinks > ul > p{
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+.socialLinks > ul > li{
+    display: inline-block;
+    padding: 0 0.5em;
+    cursor: pointer;
+}
+.socialLinks > ul > li > svg{
+    fill: #5a828f;
+}
+.socialLinks > ul > li:hover > svg{
+    fill: #007092;
+}
+
+.footerSignUp{
+    display: flex;
+    color: #5a828f;
+}
+.footerSignUp > div{
+    margin: auto auto;
+}
+.footerBottom{
+    margin: auto;
+    height: 2em;
+    font-size: 1.8em;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 1em;
+    color: #5a828f;
+}
+
+
 /* Main Layout */
 
 .aboutLayout, .projectsLayout, .surveyLayout, .contactLayout{
     width: 70%;
-    height: 400px;/*height: 400px;TEMP*/
+   
     margin: 0 auto; 
 }
 .aboutLayout{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
+
 .projectItem{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 5em 0;
+    position: relative;
 }
 .projectItem > aside{
     grid-column: 1/2;
+    align-self: center;
+    margin: 0 1em;
+    width: 400px;
+    height: 256px;
+    grid-row: 1/2;
+    
+   
+}
+.videoShaddow{
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
 }
 .projectItem > section{
     grid-column: 2/4;
     grid-row: 1/2;
 }
-
-section, aside, p, h1, ul, li{
-    border: solid 1px black;
-    margin: 1px;
+.projectItem:nth-child(2) > section{
+    grid-column: 1/3;
+  
+}
+.projectItem:nth-child(2) > aside{
+    grid-column: 3/4;
+    justify-self: end;
+}
+header{
+    font-size: 3em;
+    
+    padding-bottom: 0.5em;
+}
+.projectVideo{
+    position: relative;
+    overflow: hidden;
+}
+.soonBanner{
+    position: absolute;
+    top: 0;
+    left: 3em;
+    width: 100%;
+    height: 2em;
+    background-color: red;
+    rotate: 30deg;
+    display: flex;
+}
+.soonBanner > p {
+    font-size: 1.5em;
+    padding-left: 56%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
+.surveyLayout{
+    height: 700px;
+}
+.surveyForm{
+    font-size: 1.2em;
+    width: 300px;
+    text-align: left;
+}
+fieldset > *{
+    display: inline-block;
+
+}
+
+.highlightLine{
+    width: 5%;
+    margin: 0 auto;
+    border-bottom: solid 2px #034f68;;
+}
+
+.curved {
+    position: relative;
+    border-bottom-left-radius: 50% 9%;
+    border-bottom-right-radius: 50% 9%;
+  }
+
+
+  .survey{
+      z-index: 3;
+      background-color: transparent;
+  }
+
+  .semiCircle {
+    position: relative;
+    z-index: 1;
+  }
+  .semiCircle::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    width: 415px;
+    height: 175px;
+    border-radius: 50%;
+    background: #ff7984;
+    transform: translateX(-50%) translateY(13%);
+    bottom: 0px;
+  }
+ /*HIDDEN SECTIONS*/
+ .menu, .contact, .survey{
+     display: none;
+ }
+ 
