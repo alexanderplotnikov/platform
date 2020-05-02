@@ -25,7 +25,6 @@ Donate
 ///SATURDAY///
 Contact / Survey - (at least basic) - optional
 Sign Up form style + hook up backend(formspree) - 1.5hrs
-Launch button for projects - 1hr
 Add responsiveness -2hrs
 Social accounts(create + link) -1hr
 Overall style (Fonts/size/boxshadow/backgrounds)
