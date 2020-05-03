@@ -159,7 +159,7 @@ body{
     /*Token Board layout*/
     .projectItem > aside{
         align-self: center;
-        margin: 0 1em;
+        margin: 0 5px;
         width: 350px;
         height: 225px;
     }
@@ -275,6 +275,9 @@ body{
     }
     #jumboDesc{
         font-size: 1.5em;
+    }
+    .projectItem > aside{
+        margin: 0 1em;
     }
     /*FOOTER STYLE AND LAYOUT*/
     .footerMission{
@@ -433,8 +436,8 @@ fieldset > *{
     position: absolute;
     content: '';
     left: 50%;
-    width: 375px;
-    height: 175px;
+    width: 360px;
+    height: 170px;
     border-radius: 50%;
     background: #7faf9c;
     transform: translateX(-50%) translateY(13%);
