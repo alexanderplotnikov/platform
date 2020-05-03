@@ -8,10 +8,11 @@ About section
     Who we are
 Projects section
     list projects
-Survey for future Projects
-    item 1/2/3/write in/ submit btn
-Contact us  
-    3rd party form (Formspree)
+Survey form
+    html/css/js(setup Formspree)    
+    Content for Survey Area - a few given suggestions(research apps)
+Contact form    
+    html/css/js(setup Formspree)
 Footer
     Social links/Share us btn
     Privacy/Term of Use
@@ -20,20 +21,11 @@ Footer
     blog/news?
 
 
-Donate
-
 ///SATURDAY///
-Contact / Survey - (at least basic) - optional
 Sign Up form style + hook up backend(formspree) - 1.5hrs
-Add responsiveness -2hrs
 Social accounts(create + link) -1hr
-Overall style (Fonts/size/boxshadow/backgrounds)
 
-Survey form
-    html/css/js(setup Formspree)    
-    Content for Survey Area - a few given suggestions(research apps)
-Contact form    
-    html/css/js(setup Formspree)
+
 
     
 
