@@ -248,6 +248,8 @@ body{
     .footerSignUp{
         display: flex;
         color: #5a828f;
+        padding-top: 1em;
+        padding-bottom: 2.5em;
     }
     .footerSignUp > div{
         margin: auto auto;
