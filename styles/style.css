@@ -446,7 +446,7 @@ header{
 }
 .projectVideo{
     position: relative;
-    overflow: hidden;
+    
 }
 /*Coming Soon banner STYLE*/
 .soonBanner{
@@ -475,11 +475,8 @@ header{
     position: absolute;
     bottom: 0;
     cursor: pointer;
-    display: -webkit-box; 
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex; 
     display: flex;
+    z-index: 10;
 }
 .launchBanner:hover{
     background-color: rgb(170, 1, 1);
@@ -491,7 +488,7 @@ header{
 }
 .launchBanner > p{
     margin: auto auto;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.7em;
     
 }
