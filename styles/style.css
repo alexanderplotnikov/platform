@@ -474,8 +474,12 @@ header{
     width: 100%;
     position: absolute;
     bottom: 0;
-    display: flex;
     cursor: pointer;
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex;
 }
 .launchBanner:hover{
     background-color: rgb(170, 1, 1);
