@@ -448,6 +448,9 @@ header{
     position: relative;
     
 }
+#soonBanner{
+    overflow: hidden;
+}
 /*Coming Soon banner STYLE*/
 .soonBanner{
     position: absolute;
@@ -490,11 +493,11 @@ header{
     margin: auto auto;
     font-weight: 700;
     font-size: 1.7em;
-    
 }
-a:visited{
+a:visited, a:focus{
     color: inherit;
 }
+
 /*small separation line for Projects section*/
 .highlightLine{
     width: 5%;
